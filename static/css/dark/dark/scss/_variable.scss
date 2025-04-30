@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$px-theme:			#f71735 !default;
+$px-dark:			#011627 !default;
+$px-dark-1:			#001e35 !default;
+
+$px-white:			#fff !default;
+$px-black:			#000 !default;
+
+$px-gray:			#fff5ec !default;
+
+$px-body:			rgba(255,255,255,.5) !default;
+$px-font-size:		15px !default;
+$px-line-height:	1.7 !default;
+$px-font:			'Inter', sans-serif !default;
+$px-font-alt:		'Inter', sans-serif !default;
+
+$px-shadow:			rgba(0, 0, 0, 0.25) 0px 25px 50px -12px !default;
+$px-shadow-sm:			rgba(0, 0, 0, 0.25) 0px 7px 20px -22px !default;
+
+
+// Breakpoints
+$px-media-xsm:		567px !default;
+$px-media-sm:		767px !default;
+$px-media-md:		991px !default;
+$px-media-lg:		1200px !default;

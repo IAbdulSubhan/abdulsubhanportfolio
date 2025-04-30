@@ -1,0 +1,144 @@
+.navbar-toggler,
+.toggler-menu {
+	width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 20px 0 0;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 15px;
+	background: $px-theme;
+	border: none;
+	span {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    width: 25px;
+	    height: 2px;
+	    margin: auto;
+	    box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
+		background: $px-white;
+		color: $px-white;
+	}
+}
+
+@include up-md {
+	.main-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 111;
+		width: 100%;
+		top: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.fixed-header & {
+			box-shadow: $px-shadow-sm;
+			background: $px-dark;
+		}
+		.navbar {
+			padding: 0;
+		}
+		.navbar-brand {
+			color: $px-white;
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 1;
+		}
+		.navbar-nav {
+			> li {
+				padding: 0 20px;
+				> a {
+					padding: 5px 0 !important;  
+					color: rgba($px-white, 0.6);
+					font-weight: 500;
+					text-transform: uppercase;
+					font-size: 14px;
+					letter-spacing: 0.08rem;
+					position: relative;
+					&:after {
+						content:"";
+						position: absolute;
+						bottom: 0;
+						left: auto;
+						right: 0;
+						height: 1px;
+						background: $px-white;
+						width: 0px;
+						transition: ease all 0.35s;
+					}
+					&.active {
+						color: $px-white;
+						&:after {
+							left: 0;
+							right: auto;
+							width: 100%;
+						}
+					}
+				}
+				&:hover {
+					> a {
+						&:after {
+							left: 0;
+							right: auto;
+							width: 100%;
+						}
+					}		
+				}
+			}
+		}
+	}
+
+}
+
+
+/* Mobile 
+-----------------------------*/
+@include down-md {
+	.main-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 111;
+		width: 100%;
+		top: 0;
+		border-bottom: 1px solid rgba($px-white, 0.2);
+		box-shadow: $px-shadow-sm;
+		.container {
+			max-width: 100%;
+			padding: 0;
+		}
+		.fixed-header & {
+			background: $px-dark;
+		}
+		.navbar {
+			padding: 0;
+		}
+		.navbar-brand {
+			color: $px-white;
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 1;
+			margin: 15px 20px;
+		}
+		.navbar-nav {
+			background: $px-dark;
+			> li {
+				border-top: 1px solid rgba($px-white, 0.05);
+				> a {
+					padding: 12px 20px;
+					font-weight: 700;
+					text-transform: uppercase;
+					font-size: 14px;
+					letter-spacing: 0.05rem;
+					color: $px-white;
+					&.active {
+						color: $px-theme;
+					}
+				}
+			}
+		}
+	}
+}
