@@ -8,3 +8,12 @@ function sendMail(){
 
     emailjs.send("service_mxqzz6v", "template_v329sya", params).then(alert("Email Sent!!"))
 }
+
+window.addEventListener('DOMContentLoaded', function () {
+    var typed = new Typed('#type-it', {
+      strings: ['Data Scientist', 'Machine Learning Engineer', 'Developer'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  });
