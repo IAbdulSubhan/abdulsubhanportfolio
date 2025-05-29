@@ -11,7 +11,7 @@ function sendMail(){
 
 window.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed('#type-it', {
-      strings: ['Data Scientist', 'Machine Learning Engineer', 'Developer'],
+      strings: ['Django Backend Developer','Python Developer','Automation & Scraping Expert','ML Enthusiast'],
       typeSpeed: 50,
       backSpeed: 30,
       loop: true
