@@ -903,7 +903,7 @@ body {
 .hexagon {
   background-color: #f71735;
   border-radius: 10px;
-  width: 100px;
+  width: 80px;
   height: 63px;
   transition: all 1s;
   position: relative; }
@@ -926,8 +926,6 @@ body {
             transform: rotate(-60deg); }
 
 .feature-box-1 {
-  padding: 0 15% 30px;
-  background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   text-align: center;
   margin-top: 45px;
@@ -943,7 +941,7 @@ body {
         align-items: center;
     position: relative;
     margin: 0 auto 30px;
-    top: -20px;
+    top: -30px;
     transition: ease all 0.35s; }
     .feature-box-1 .icon i {
       position: relative;
@@ -956,8 +954,6 @@ body {
     font-size: 18px;
     color: #fff;
     margin-bottom: 10px; }
-  .feature-box-1:hover {
-    border-color: #f71735; }
     .feature-box-1:hover .icon {
       top: -15px; }
 
