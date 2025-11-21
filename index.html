@@ -15,6 +15,41 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <!-- theme css -->
   <link href="static/css/dark/style.css" rel="stylesheet" />
+  <style>
+    /* Experience Tabs Custom Style */
+    #experienceTab .nav-link {
+      border-radius: 2rem;
+      color: #fff;
+      background: transparent;
+      margin-right: 0.5rem;
+      padding: 0.5rem 1.5rem;
+      border: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    #experienceTab .nav-link.active {
+      background: #2d2d2d;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    #experienceTab .nav-link:not(.active):hover {
+      background: #444;
+      color: #fff;
+    }
+
+    #experienceTab {
+      border-bottom: none;
+      justify-content: center;
+    }
+
+    @media (max-width: 600px) {
+      #experienceTab .nav-link {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <!-- emailjs -->
@@ -428,117 +463,311 @@
             </div>
           </div>
         </div>
+        <!-- Experience Tabs -->
         <div class="row justify-content-center pt-3">
           <div class="col-lg-10">
-            <div class="resume-box">
-              <ul>
-                <li class="row g-0">
-                  <div class="col-sm-4 col-xl-3">
-                    <h6>Sep, 2024 – Dec, 2024</h6>
-                  </div>
-                  <div class="col-sm-8 col-xl-9 ps-xl-4">
-                    <h5>Ruby on Rails Intern</h5>
-                    <p>
-                      Completed an internship focused on Ruby on Rails development, contributing to a Depot app project
-                      involving backend development, MVC architecture, and RESTful APIs.
-                    </p>
-                    <span>InfinitDev - Sheikhupura, Pakistan</span>
-                  </div>
-                </li>
-                <li class="row g-0">
-                  <div class="col-sm-4 col-xl-3">
-                    <h6>Jan, 2025 – May, 2025</h6>
-                  </div>
-                  <div class="col-sm-8 col-xl-9 ps-xl-4">
-                    <h5>Junior Backend Developer (ROR)</h5>
-                    <p>
-                      Worked as part of a backend development team focused on product stabilization, performance
-                      optimization, and codebase reliability. Contributed to core infrastructure and maintenance of
-                      multiple platforms including:
-                    </p>
-                    <ul>
-                      <a href="https://www.autopartify.com/" target="_blank">Autopartify</a> |
-                      <a href="http://autorentify.com/" target="_blank">Autorentify</a> |
-                      <a href="#" target="_blank">Sale Point</a> |
-                      <a href="https://reinsapp.com/" target="_blank">Reins App</a>
-                    </ul>
-                    <span>InfinitDev - Sheikhupura, Pakistan</span>
-                  </div>
-                </li>
-
-                <li class="row g-0">
-                  <div class="col-sm-4 col-xl-3">
-                    <h6>June, 2025 – August, 2025</h6>
-                  </div>
-                  <div class="col-sm-8 col-xl-9 ps-xl-4">
-                    <h5>Automation & WebScrapping Developer (Remote)</h5>
-                    <p>
-                      Developed robust automation scripts and web-scraping tools in Python to streamline data extraction
-                      using Playwright and
-                      Selenium. These tools enable users to check insurance member eligibility for both individual
-                      patients and bulk patient
-                      lists, with support for background window services. The system retrieves detailed member
-                      information—including
-                      eligibility status—from insurance portals, and saves the corresponding eligibility documents as
-                      base64-encoded images
-                      and PDFs. These are integrated into <a href="http://insotics.qasralsahlit.com:8000"
-                        target="_blank">Insotics App</a>
-                    </p>
-                    <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
-                  </div>
-                </li>
-                <li class="row g-0">
-                  <div class="col-sm-4 col-xl-3">
-                    <h6>August, 2025 – Sep, 2025</h6>
-                  </div>
-                  <div class="col-sm-8 col-xl-9 ps-xl-4">
-                    <h5>Python Developer (Remote)</h5>
-                    <p>
-                      Claim Downloader – Automated XML Claim Retrieval & Processing Pipeline <br>
-                      Built an end-to-end automated pipeline to download, decode, parse, and store healthcare claim XML
-                      files. The system
-                      retrieves transaction files (submission or remittance) for a given client and date range,
-                      processes them, and inserts
-                      structured data into the database.
-                      br
-                      Demo: <a href="eClaim-Downloader-Logs.gif" target="_blank" rel="noopener">View Demo (GIF)</a>
-                    </p>
-                    <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
-                  </div>
-                </li>
-                <li class="row g-0">
-                  <div class="col-sm-4 col-xl-3">
-                    <h6>June, 2025 – </h6>
-                  </div>
-                  <div class="col-sm-8 col-xl-9 ps-xl-4">
-                    <h5>Python Developer (Remote)</h5>
-                    <p>
-                      Developed and maintained SAAS based web application using FastAPI, focusing on backend logic, database
-                      integration, and API development.
-                      <a href="http://insotics.qasralsahlit.com:8000" target="_blank">Insotics App</a>
-                    </p>
-                    <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
-                  </div>
-                </li>
-                <li class="row g-0">
-                  <div class="col-sm-4 col-xl-3">
-                    <h6>Sep, 2016 – May, 2017</h6>
-                  </div>
-                  <div class="col-sm-8 col-xl-9 ps-xl-4">
-                    <h5>Full Stack Developer</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing
-                      elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore magna aliqua.
-                    </p>
-                    <span>- Las Vegas, USA</span>
-                  </div>
-                </li>
-              </ul>
+            <ul class="nav nav-tabs mb-4" id="experienceTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-exp"
+                  type="button" role="tab">All</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="python-tab" data-bs-toggle="tab" data-bs-target="#python-exp" type="button"
+                  role="tab">Python Developer</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ror-tab" data-bs-toggle="tab" data-bs-target="#ror-exp" type="button"
+                  role="tab">Ruby on Rails Developer</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="auto-tab" data-bs-toggle="tab" data-bs-target="#auto-exp" type="button"
+                  role="tab">Automation & Scraping</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="db-tab" data-bs-toggle="tab" data-bs-target="#db-exp" type="button"
+                  role="tab">Database</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="experienceTabContent">
+              <!-- All Experience Tab -->
+              <div class="tab-pane fade show active" id="all-exp" role="tabpanel">
+                <div class="resume-box">
+                  <ul>
+                    <!-- All Experience: All items -->
+                    <li class="row g-0 exp-item python ror db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>Sep, 2024 – Dec, 2024</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Ruby on Rails Intern</h5>
+                        <p>Completed an internship focused on Ruby on Rails development, contributing to a Depot app
+                          project involving backend development, MVC architecture, and RESTful APIs.</p>
+                        <span>InfinitDev - Sheikhupura, Pakistan</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item ror db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>Jan, 2025 – May, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Junior Backend Developer (ROR)</h5>
+                        <p>Worked as part of a backend development team focused on product stabilization, performance
+                          optimization, and codebase reliability. Contributed to core infrastructure and maintenance of
+                          multiple platforms including:
+                        <ul>
+                          <a href="https://www.autopartify.com/" target="_blank">Autopartify</a> |
+                          <a href="http://autorentify.com/" target="_blank">Autorentify</a> |
+                          <a href="#" target="_blank">Sale Point</a> |
+                          <a href="https://reinsapp.com/" target="_blank">Reins App</a>
+                        </ul>
+                        </p>
+                        <span>InfinitDev - Sheikhupura, Pakistan</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item auto python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>June, 2025 – August, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Automation & WebScrapping Developer (Remote)</h5>
+                        <p>Developed robust automation scripts and web-scraping tools in Python to streamline data
+                          extraction using Playwright and Selenium. These tools enable users to check insurance member
+                          eligibility for both individual patients and bulk patient lists, with support for background
+                          window services. The system retrieves detailed member information—including eligibility
+                          status—from insurance portals, and saves the corresponding eligibility documents as
+                          base64-encoded images and PDFs. These are integrated into <a
+                            href="http://insotics.qasralsahlit.com:8000" target="_blank">Insotics App</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>August, 2025 – Sep, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Python Developer (Remote)</h5>
+                        <p>Claim Downloader – Automated XML Claim Retrieval & Processing Pipeline <br>Built an
+                          end-to-end automated pipeline to download, decode, parse, and store healthcare claim XML
+                          files. The system retrieves transaction files (submission or remittance) for a given client
+                          and date range, processes them, and inserts structured data into the database.<br>Demo: <a
+                            href="eClaim-Downloader-Logs.gif" target="_blank" rel="noopener">View Demo (GIF)</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>June, 2025 – </h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Python Developer (Remote)</h5>
+                        <p>Developed and maintained SAAS based web application using FastAPI, focusing on backend logic,
+                          database integration, and API development. <a href="http://insotics.qasralsahlit.com:8000"
+                            target="_blank">Insotics App</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>Sep, 2016 – May, 2017</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Full Stack Developer</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua.</p>
+                        <span>- Las Vegas, USA</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Python Developer Tab -->
+              <div class="tab-pane fade" id="python-exp" role="tabpanel">
+                <div class="resume-box">
+                  <ul>
+                    <li class="row g-0 exp-item python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>August, 2025 – Sep, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Python Developer (Remote)</h5>
+                        <p>Claim Downloader – Automated XML Claim Retrieval & Processing Pipeline <br>Built an
+                          end-to-end automated pipeline to download, decode, parse, and store healthcare claim XML
+                          files. The system retrieves transaction files (submission or remittance) for a given client
+                          and date range, processes them, and inserts structured data into the database.<br>Demo: <a
+                            href="eClaim-Downloader-Logs.gif" target="_blank" rel="noopener">View Demo (GIF)</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>June, 2025 – </h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Python Developer (Remote)</h5>
+                        <p>Developed and maintained SAAS based web application using FastAPI, focusing on backend logic,
+                          database integration, and API development. <a href="http://insotics.qasralsahlit.com:8000"
+                            target="_blank">Insotics App</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Ruby on Rails Developer Tab -->
+              <div class="tab-pane fade" id="ror-exp" role="tabpanel">
+                <div class="resume-box">
+                  <ul>
+                    <li class="row g-0 exp-item ror db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>Sep, 2024 – Dec, 2024</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Ruby on Rails Intern</h5>
+                        <p>Completed an internship focused on Ruby on Rails development, contributing to a Depot app
+                          project involving backend development, MVC architecture, and RESTful APIs.</p>
+                        <span>InfinitDev - Sheikhupura, Pakistan</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item ror db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>Jan, 2025 – May, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Junior Backend Developer (ROR)</h5>
+                        <p>Worked as part of a backend development team focused on product stabilization, performance
+                          optimization, and codebase reliability. Contributed to core infrastructure and maintenance of
+                          multiple platforms including:
+                        <ul>
+                          <a href="https://www.autopartify.com/" target="_blank">Autopartify</a> |
+                          <a href="http://autorentify.com/" target="_blank">Autorentify</a> |
+                          <a href="#" target="_blank">Sale Point</a> |
+                          <a href="https://reinsapp.com/" target="_blank">Reins App</a>
+                        </ul>
+                        </p>
+                        <span>InfinitDev - Sheikhupura, Pakistan</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Automation & Scraping Tab -->
+              <div class="tab-pane fade" id="auto-exp" role="tabpanel">
+                <div class="resume-box">
+                  <ul>
+                    <li class="row g-0 exp-item auto python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>June, 2025 – August, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Automation & WebScrapping Developer (Remote)</h5>
+                        <p>Developed robust automation scripts and web-scraping tools in Python to streamline data
+                          extraction using Playwright and Selenium. These tools enable users to check insurance member
+                          eligibility for both individual patients and bulk patient lists, with support for background
+                          window services. The system retrieves detailed member information—including eligibility
+                          status—from insurance portals, and saves the corresponding eligibility documents as
+                          base64-encoded images and PDFs. These are integrated into <a
+                            href="http://insotics.qasralsahlit.com:8000" target="_blank">Insotics App</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Database Tab -->
+              <div class="tab-pane fade" id="db-exp" role="tabpanel">
+                <div class="resume-box">
+                  <ul>
+                    <li class="row g-0 exp-item python ror db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>Sep, 2024 – Dec, 2024</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Ruby on Rails Intern</h5>
+                        <p>Completed an internship focused on Ruby on Rails development, contributing to a Depot app
+                          project involving backend development, MVC architecture, and RESTful APIs.</p>
+                        <span>InfinitDev - Sheikhupura, Pakistan</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item ror db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>Jan, 2025 – May, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Junior Backend Developer (ROR)</h5>
+                        <p>Worked as part of a backend development team focused on product stabilization, performance
+                          optimization, and codebase reliability. Contributed to core infrastructure and maintenance of
+                          multiple platforms including:
+                        <ul>
+                          <a href="https://www.autopartify.com/" target="_blank">Autopartify</a> |
+                          <a href="http://autorentify.com/" target="_blank">Autorentify</a> |
+                          <a href="#" target="_blank">Sale Point</a> |
+                          <a href="https://reinsapp.com/" target="_blank">Reins App</a>
+                        </ul>
+                        </p>
+                        <span>InfinitDev - Sheikhupura, Pakistan</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item auto python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>June, 2025 – August, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Automation & WebScrapping Developer (Remote)</h5>
+                        <p>Developed robust automation scripts and web-scraping tools in Python to streamline data
+                          extraction using Playwright and Selenium. These tools enable users to check insurance member
+                          eligibility for both individual patients and bulk patient lists, with support for background
+                          window services. The system retrieves detailed member information—including eligibility
+                          status—from insurance portals, and saves the corresponding eligibility documents as
+                          base64-encoded images and PDFs. These are integrated into <a
+                            href="http://insotics.qasralsahlit.com:8000" target="_blank">Insotics App</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>August, 2025 – Sep, 2025</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Python Developer (Remote)</h5>
+                        <p>Claim Downloader – Automated XML Claim Retrieval & Processing Pipeline <br>Built an
+                          end-to-end automated pipeline to download, decode, parse, and store healthcare claim XML
+                          files. The system retrieves transaction files (submission or remittance) for a given client
+                          and date range, processes them, and inserts structured data into the database.<br>Demo: <a
+                            href="eClaim-Downloader-Logs.gif" target="_blank" rel="noopener">View Demo (GIF)</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item python db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>June, 2025 – </h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Python Developer (Remote)</h5>
+                        <p>Developed and maintained SAAS based web application using FastAPI, focusing on backend logic,
+                          database integration, and API development. <a href="http://insotics.qasralsahlit.com:8000"
+                            target="_blank">Insotics App</a></p>
+                        <span><a href="http://qasralsahlit.com">QasralsahlIT Solutions</a> - UAE</span>
+                      </div>
+                    </li>
+                    <li class="row g-0 exp-item db">
+                      <div class="col-sm-4 col-xl-3">
+                        <h6>Sep, 2016 – May, 2017</h6>
+                      </div>
+                      <div class="col-sm-8 col-xl-9 ps-xl-4">
+                        <h5>Full Stack Developer</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua.</p>
+                        <span>- Las Vegas, USA</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
     </section>
     <!-- End Resume -->
     <!-- Portfolio -->
@@ -996,6 +1225,12 @@
   <script src="static/plugin/one-page/scrollIt.min.js"></script>
   <script src="static/js/custom.js"></script>
   <script src="static/js/mail_send.js"></script>
+  <!-- Experience Tabs JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Bootstrap handles tab switching, but you can add custom logic if needed
+    });
+  </script>
   <!-- script for shifting in portfolio filters -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
